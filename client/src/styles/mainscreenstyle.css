@@ -1,0 +1,170 @@
+
+
+#navigationMenu{
+    background-color:var(--MainColor);
+    box-shadow: 10px 0px 11px rgb(0 0 0 / 0.3);
+    position: fixed;
+    z-index: 10;
+    height: 7vh;
+    top:0;
+    
+    text-align: center;
+}
+#navigationMenu div{
+    border-block-end-width: 0px;
+}
+
+#navItem {
+    align-content: center;
+    margin: auto;
+    margin-left: 12px;
+}
+#navItem a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+#buttonStyle{
+    background-color: var(--MainColor);
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px; /* Green */
+}
+#buttonStyle h1{
+    font-size:larger;
+}
+#BalligoTextLogo{
+    color:white;
+    text-decoration: none;
+    font-size: 2pc;
+    font-family: "Georgia";
+}
+
+.loginButton h1{
+    color:white;
+    font-size: 40px;
+}
+.loginButton{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--MainColor);
+    border: 1px solid;
+    width: 8%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3vh;
+    height: 5vh;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: var(--MainFont);
+    margin: 5px;
+    margin-top: 0.6vh;
+    
+}
+.loginButton  span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.loginButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.loginButton:hover span {
+    padding-right: 25px;
+
+
+}
+  
+.loginButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#MainPageDiv{
+    height: 96vh;
+    top: 4vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background: url(../Resources/Images/draft1\ Balligo\ homepage.jpg);
+    background-color: rgb(250, 250, 250, 0.5);
+    background-blend-mode: lighten;
+
+}
+#MainPageDiv img{
+    width: auto;
+    height: 100%;
+    margin: auto;
+    transition: 0.5s;
+    position: absolute;
+    top: 60%;
+}
+#MainPageDiv img:hover{
+    width: auto;
+    height: 108%;
+    transition: 0.5s;
+}
+
+#MainPageDiv img :hover:after{
+    transition: 0.5s;
+}
+#navbarNavDropdown{
+    float: right;
+    display: contents;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.whiteText {
+    color: white;
+}
+#MainScreenButton{
+    border-radius: 24px;
+    position: absolute;
+    height: fit-content;
+    padding: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: fit-content;
+    font-size: var(--LargeText);
+    
+    top: 50%;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+}
+#MainScreenButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+#VisionStatement{
+    position:absolute;
+    top:30%;
+    text-align: center;
+    font-size: var(--ReallyLarge);
+    color:var(--MainColor);
+    transition: 1s;
+    background-color: var(--SecondaryColor);
+    border-bottom: solid var(--MainColor);
+    border-top: solid var(--MainColor);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 24px;
+
+}
+#MainPageDivImage {
+    transition: all 0.3s ease;
+}

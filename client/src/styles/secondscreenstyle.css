@@ -1,0 +1,162 @@
+#SecondPageDiv{ 
+    height: 90vh;
+    float: left;
+    flex-direction: row;
+    display: flex;
+}   
+
+#leftOpenMenu{
+    opacity: 0;
+    margin-top: -10vh;
+    text-align: left;
+    position: absolute;
+    z-index: -1 ;
+}
+#leftOpenMenu h1{
+    font-size: var(--SuperDupperLarge);
+}
+#leftOpenMenu input{
+    width: 40vw;
+    height: 8vh;
+    border-radius: 20px;
+    border: none;
+}
+#leftOpenMenu button{
+    width: 20vw;
+    margin-left: 2vw;
+    background-color: none;
+    border: none;
+}
+#leftOpenMenu input{
+    width: 20vw;
+    font-size: 3vw;
+    text-align: center;
+    color: var(--MainColor);
+    height: auto;
+    margin-left: 2vw;
+    background-color: none;
+    border: none;
+    transition: 0.7s;
+}
+
+#leftOpenMenu input:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
+}
+#leftOpenMenu button img{
+    width: 19vw;
+}
+#rightOpenMenu{
+    position: absolute;
+    width: 60%;
+    margin-top: -47vh;
+}
+#leftSide{
+
+    background-color: var(--MainColor);
+    height: inherit;
+    padding-top: 20vh;
+    padding-left: 3vw;
+    width: 50vw;
+    box-shadow: 10px 0px 11px rgb(0 0 0 / 0.1);
+    z-index: 5;
+    text-align: right;
+    
+}
+#leftSide #SupText{
+    text-align: left;
+    font-size: var(--LargeText);
+    margin-bottom: 0px;
+}
+#leftSide #MainText{
+    text-align: left;
+    font: bold;
+    transition: 0.5s;
+    margin-top: -10px;
+    width: inherit;
+    font-size: var(--SuperDupperLarge);
+    position: absolute;
+    display: block;
+
+}
+#leftSide #Subtext{
+    margin-top: 15vh;
+    text-align: left;
+    margin-left: 4vw;
+    font-size: var(--ReallyLarge);
+}
+
+#rightSide{
+    background-color: var(--SecondaryColor);
+    height: inherit;
+    padding-top: 20vh;
+    padding-left: 3vw;
+    width: 50vw;
+    box-shadow: 10px 0px 11px rgb(0 0 0 / 0.1);
+    z-index: 5;
+    text-align: right;
+}
+
+#rightSide #SupText{
+    text-align: left;
+    color: var(--MainColor);
+    font-size: var(--LargeText);
+    margin-bottom: 0px;
+}
+#rightSide #MainText{
+    text-align: left;
+    color: var(--MainColor);
+    font: bold;
+    transition: 0.5s;
+    margin-top: -10px;
+    width: inherit;
+    font-size: var(--SuperDupperLarge);
+    position: absolute;
+    display: block;
+
+}
+#rightSide #Subtext{
+    margin-top: 15vh;
+    text-align: left;
+    color: var(--MainColor);
+    margin-left: 4vw;
+    font-size: var(--ReallyLarge);
+}
+#Letters{
+    transition: 0.5s;
+    font-size: var(--SuperDupperLarge);
+}
+#Letters:hover{
+
+    transition: 0.5s;
+    font-size: var(--MoreSuperDupperLarge);
+}
+#LeftSubButton{
+    z-index: 5;
+
+}
+#leftOpenMenu p{
+    font-size: var(--LargeText);
+    margin-left: 2vw;
+    font-weight: bold;
+}
+#leftOpenMenu .inputing{
+    margin-top: -3vh;
+    background-color: var(--MainColor);
+    border-bottom: 4px solid var(--SecondaryColor);
+    color: var(--SecondaryColor);
+    width: 60vw;
+    font-size: 2.9vh;
+    text-align: left;
+    padding-left: 2vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+#leftOpenMenu #submit{
+    position: absolute;
+    background-color: var(--SecondaryColor);
+    width: 14vw;
+    height: 31vh;
+    top: 0vh;
+}
+

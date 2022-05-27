@@ -1,0 +1,78 @@
+
+:root{
+    --height:  94vh;
+    --navbar-color: white;
+    --MainFont: "Arial Rounded MT Bold";
+    --SecFont: "Open Sans" "Light";
+    --MainColor: rgb(242, 101, 34);
+    --LargeText: 3vh;
+    --MediumText: 2vh;
+    --ReallyLarge: 5vh;
+    --SuperDupperLarge: 10vh;
+    --MoreSuperDupperLarge: 12vh;
+
+    --SecondaryColor: white;
+}
+ul {
+    list-style-type: none;
+    margin: 10000;
+    padding: 0;
+  }
+h1 {
+    color: white;
+    font-family: var(--MainFont);
+    text-decoration: none;
+}
+p{
+    color: white;
+    font-family: var(--SecFont);
+}
+h2{
+    color: white;
+    font-family: var(--SecFont);
+
+}
+a {
+    font-family: var(--MainFont);
+    color: white !important;
+    background-color: var(--MainColor);
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-radius: 50%;
+}
+button{
+    vertical-align: middle;
+    color: var(--SecondaryColor);
+    background-color: var(--MainColor);
+} 
+button:hover{
+    vertical-align: middle;
+    color:var(--MainColor);
+    background-color: var(--SecondaryColor);
+} 
+ /*navigation bar login button  */
+#LoginButton{
+    transition: 0.5s;
+}
+#loginButton:hover span{
+    color:var(--MainColor);
+
+}
+.SubButton{
+    text-align: right;
+    margin-right: 2vw;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: var(--LargeText);
+    transition: 0.5s;
+
+}
+.SubButton:hover{
+    background-color: var(--SecondaryColor);
+    color: var(--MainColor);
+
+    transition: 0.5s;
+}
