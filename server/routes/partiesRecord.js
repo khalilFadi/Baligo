@@ -68,18 +68,17 @@ recordRoutes.route("/partiesRecord/:id").post(function (req, response) {
 });
  
 // This section will help you delete a record
-recordRoutes.route("/id").delete((req, response) => {
+recordRoutes.route("/:id").delete((req, response) => {
 
-  console.log("Im here");
+
   let db_connect = dbo.getDb2();
   let myquery = { _id:ObjectId( req.params.id )};
-  const _id = new ObjectID(req.body._id);
-  db_connect.collection("records").deleteOne({_id:_id},function(err,question){
-    if(err) throw err;
-    console.log('the document is deleted')
-    res.send(question);
 
-});
+  db_connect.collection("records").deleteOne(myquery, function (err, obj) {
+        if (err) throw err;
+        console.log("1 document deleted");
+        response.json(obj);
+      });
 });
  
 module.exports = recordRoutes;
