@@ -150,8 +150,15 @@
     text-align: left;
     padding-left: 2vw;
     height: 5vh;
-    border-radius: 10px;
+    border-radius: 0px;
 }
+#leftOpenMenu .inputing:hover{
+    box-shadow: 100px;
+}
+#leftOpenMenu .inputing::placeholder{
+    color: var(--SecondaryColor);
+}
+
 #leftOpenMenu #submit{
     position: absolute;
     background-color: var(--SecondaryColor);

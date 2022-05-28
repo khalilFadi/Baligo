@@ -9,6 +9,7 @@ import { useNavigate } from "react-router";
 
 
 export default function CreateAPartyscreen() {
+    var choosenSport = "basketball";
     const [form, setForm] = useState({
         PartyName: "",
         Location: "",
@@ -46,14 +47,14 @@ export default function CreateAPartyscreen() {
         setForm({ PartyName: "", Location: "", DateRange: "", Sport: "" });
         navigate("/");
       }
-    function SetSport(choice){
-      form.Sport = choice;
-    }
+
     return (
         <div id="leftOpenMenu">
         <form onSubmit={onSubmit}>
-
-            <p>Party Name</p>
+            <div style={{flexDirection: "row", Display: 'flex'}}>
+              {/* <div style={{backgroundColor: "white", width: "10px", height: "50px"}}></div> */}
+              <p>Party Name</p>
+            </div>
             <input 
                 type="text"   
                 className="inputing"
@@ -89,9 +90,9 @@ export default function CreateAPartyscreen() {
          />
         </form>
         <div>
-            <input type="image" onClick={SetSport("basketball")} src={require("../Resources/Images/2ndscreen-basketball-logo.png")} />
-            <input type="image" src={require("../Resources/Images/2ndScreen-football-logo.png")} />
-            <input type="image" src={require("../Resources/Images/2ndScreen-vollyball-logo.png")} />
+            <input type="image" onClick={(e) => updateForm({ Sport: "Basketball" })} src={require("../Resources/Images/2ndscreen-basketball-logo.png")} />
+            <input type="image" onClick={(e) => updateForm({ Sport: "Football" })} src={require("../Resources/Images/2ndScreen-football-logo.png")} />
+            <input type="image" onClick={(e) => updateForm({ Sport: "The other thing" })} src={require("../Resources/Images/2ndScreen-vollyball-logo.png")} />
 
               </div>
         <img/>
