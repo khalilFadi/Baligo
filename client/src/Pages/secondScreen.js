@@ -183,7 +183,7 @@ export default function SecondScreen() {
 
                 <CreateAPartyscreen/>
                 <div id="leftSideCloseMenu" >
-                    <p id="SupText">invite your team</p>
+                    <p id="SupText">Invite your team</p>
                     <h1 id="MainText"> Create a party</h1>
                     <h2 id="Subtext"> Create your own party and find people to play with</h2>
                 </div>
