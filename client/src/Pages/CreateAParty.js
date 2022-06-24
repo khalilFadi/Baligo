@@ -85,16 +85,18 @@ export default function CreateAPartyscreen() {
                 ></input>
             <input
             type="submit"
+            id="btn"
             className="btn btn-primary"
-            id="submit"
+
          />
+
         </form>
-        <div>
+        {/* <div>
             <input type="image" onClick={(e) => updateForm({ Sport: "Basketball" })} src={require("../Resources/Images/2ndscreen-basketball-logo.png")} />
             <input type="image" onClick={(e) => updateForm({ Sport: "Football" })} src={require("../Resources/Images/2ndScreen-football-logo.png")} />
             <input type="image" onClick={(e) => updateForm({ Sport: "The other thing" })} src={require("../Resources/Images/2ndScreen-vollyball-logo.png")} />
 
-              </div>
+              </div> */}
         <img/>
         </div>
     );

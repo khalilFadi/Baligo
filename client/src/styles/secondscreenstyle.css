@@ -155,13 +155,9 @@
 #leftOpenMenu .inputing:hover{
     box-shadow: 100px;
 }
-#leftOpenMenu .inputing::placeholder{
-    color: var(--SecondaryColor);
-}
 
 #leftOpenMenu #submit{
     position: absolute;
-    background-color: var(--SecondaryColor);
     width: 14vw;
     height: 31vh;
     top: 0vh;
