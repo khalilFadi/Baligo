@@ -6,7 +6,11 @@ import "../styles/mainscreenstyle.css";
 import "../styles/Style.css";
 import backgroundImage from '../Resources/Images/draft1\ Balligo\ homepage.jpg';
 var x = 0;
-var txt = "Some really inspiration vision statement \n that should take all this space."; 
+<<<<<<< Updated upstream
+var txt = "your mo"; 
+=======
+var txt = "your dad"; 
+>>>>>>> Stashed changes
 var speed = 60;
 var finished = false;
 
