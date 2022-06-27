@@ -192,7 +192,7 @@ export default function SecondScreen() {
             </div>
             <div id="rightSide">
                 <div id="rightSideCloseMenu" >
-                    <p id="SupText">Find your team</p>
+                    <p id="SupText">Find your team</p> 
                     <h1 id="MainText"> Join a party</h1>
                     <h2 id="Subtext"> Find a party that matches your intrests</h2>
                 </div>

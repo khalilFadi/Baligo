@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Record = (props) => (
   <tr>
-    <td>{props.record.PartyName}</td>
+    <td>{props.record.partyOwner}</td>
     <td>{props.record.Location}</td>
-    <td>{props.record.DateRange}</td>
+    <td>{props.record.Image}</td>
     <td>{props.record.Sport}</td>
     {/* <td>{props.partiesRecord.Sport}</td> */}
     <td>
@@ -29,7 +29,7 @@ export default function JoinAParty() {
  useEffect(() => {
    async function getRecords() {
      const response = await fetch(`http://localhost:5000/partiesRecord/`);
- 
+    console.log(await (await fetch("http://localhost:5000/UsersRecord/")).json());
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
        window.alert(message);

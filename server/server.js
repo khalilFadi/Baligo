@@ -8,6 +8,7 @@ app.use(express.json());
 
 app.use(require("./routes/record.js"));
 app.use(require("./routes/partiesRecord.js"));
+app.use(require("./routes/UsersRecord.js"));
 
 // get driver connection
 const dbo = require("./db/conn.js");
