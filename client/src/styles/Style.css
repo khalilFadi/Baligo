@@ -17,6 +17,7 @@ ul {
     list-style-type: none;
     margin: 10000;
     padding: 0;
+
   }
 h1 {
     color: white;
@@ -60,7 +61,7 @@ button:hover{
 
 }
 .SubButton{
-    text-align: right;
+    text-align: center;
     margin-right: 2vw;
     border: solid 1px;
     border-radius: 20px;
@@ -69,12 +70,17 @@ button:hover{
     padding-bottom: 1vw;
     font-size: var(--LargeText);
     transition: 0.5s;
-
+    width: 12vw;
 }
-.SubButton:hover{
+.white{
     background-color: var(--SecondaryColor);
+    border-color: var(--MainColor);
+    transition: 0.5s;
     color: var(--MainColor);
-
+}
+.white:hover{
+    background-color: var(--MainColor);
+    color: var(--SecondaryColor);
     transition: 0.5s;
 }
 

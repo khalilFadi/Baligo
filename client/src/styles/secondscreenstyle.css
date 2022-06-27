@@ -16,7 +16,7 @@
     font-size: var(--SuperDupperLarge);
 }
 #leftOpenMenu input{
-    width: 40vw;
+    /* width: 40vw; */
     height: 8vh;
     border-radius: 20px;
     border: none;
@@ -27,7 +27,7 @@
     background-color: none;
     border: none;
 }
-#leftOpenMenu input{
+/* #leftOpenMenu input{
     width: 20vw;
     font-size: 3vw;
     text-align: center;
@@ -42,7 +42,7 @@
 #leftOpenMenu input:hover{
     background-color: rgba(255, 255, 255, 0.2);
     transition: 0.7s;
-}
+} */
 #leftOpenMenu button img{
     width: 19vw;
 }
@@ -91,7 +91,7 @@
     height: inherit;
     padding-top: 20vh;
     padding-left: 3vw;
-    width: 50vw;
+    width: 80vw;
     box-shadow: 10px 0px 11px rgb(0 0 0 / 0.1);
     z-index: 5;
     text-align: right;
@@ -162,4 +162,3 @@
     height: 31vh;
     top: 0vh;
 }
-

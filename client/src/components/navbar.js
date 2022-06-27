@@ -45,8 +45,8 @@ export default function Navbar() {
       </ul>
 
       
-      
-        <button class="loginButton"><span> Login </span>        
+    
+        <button class="loginButton" style={{width: "13vw"}}>Create Profile         
         </button>
 
     </div>

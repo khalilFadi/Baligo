@@ -18,7 +18,9 @@ const App = () => {
  return (
   
    <div>
-    <Navbar/>mes
+    <Navbar/>
+    <MainScreen/>
+    {/* <Navbar/>mes
     <MainScreen/>
     <SecondScreen/>
 
@@ -27,7 +29,7 @@ const App = () => {
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
-     </Routes>
+     </Routes> */}
      
    </div>
  );

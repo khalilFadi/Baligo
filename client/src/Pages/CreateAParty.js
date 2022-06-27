@@ -85,8 +85,8 @@ export default function CreateAPartyscreen() {
                 ></input>
             <input
             type="submit"
-            id="btn"
-            className="btn btn-primary"
+            className="SubButton white"
+            id = "SubmitButton"
 
          />
 

@@ -28,6 +28,7 @@ function OpenCreateAparty(){
     let rightSideClosed = document.getElementById('rightSideCloseMenu');
     let rightbutton = document.getElementById('rightSide').children.namedItem("RightSubButton");
     let rightSideOpened = document.getElementById('rightOpenMenu');
+    const RightButton = document.getElementById("LeftSubButton");
 
     //Set right Transitions here:
     rightSideOpened.style.transition = transitionTime;
@@ -36,6 +37,10 @@ function OpenCreateAparty(){
     rightbutton.style.transition = transitionTime;
 
     if(leftSideOpen){
+        //getting the button back to it's orginial position
+        RightButton.style.top = "150vh";
+        RightButton.style.right = "50vw";
+    
         //change width to split left side and right side
         leftSide.style.width = '50vw';
         rightSide.style.width = '50vw';
@@ -55,6 +60,11 @@ function OpenCreateAparty(){
         leftSideOpen = false;
         return;
     }
+    //moving the button to the top right side 
+    RightButton.style.position = 'absolute';
+    RightButton.style.top = "100vh";
+    RightButton.style.right = "10vw";
+        
     //preparing the screen hiding everything and increasing width
     leftSide.style.width = '90vw';
     rightSide.style.width = '10vw';
@@ -140,6 +150,7 @@ function Writer(){
 
     const RightButton = document.getElementById("RightSubButton");
     RightButton.onclick = function(){
+
         OpenJoinAparty()
     };
 }
