@@ -149,9 +149,14 @@
     width: 60vw;
     font-size: 2.9vh;
     text-align: left;
-    padding-left: 2vw;
+    /* padding-left: 2vw; */
     height: 5vh;
     border-radius: 0px;
+    margin-left: 2vw;
+}
+#leftOpenMenu .inputing::placeholder{
+    color: var(--SecondaryColor);
+    padding-left: -2vw;
 }
 #leftOpenMenu .inputing:hover{
     box-shadow: 100px;
@@ -162,4 +167,14 @@
     width: 14vw;
     height: 31vh;
     top: 0vh;
+}
+#chooseSport *{
+    float: left;   
+    text-align: center;
+    align-items: center;
+    margin-left: 10vw;
+}
+#chooseSport *::placeholder{
+    color: var(--SecondaryColor);
+
 }

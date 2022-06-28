@@ -10,6 +10,7 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import MainScreen from "./Pages/mainscreen";
 import SecondScreen from "./Pages/secondScreen";
+import Survey from "./Pages/Survey";
 
 import root from "./styles/Style.css";
 
@@ -19,8 +20,8 @@ const App = () => {
   
    <div style={{maxWidth: "100%"}}>
     <Navbar/>
-    <MainScreen/>
-
+    <Survey/>
+  {/* <SecondScreen /> */}
     {/* <Navbar/>mes
     <MainScreen/>
     <SecondScreen/>

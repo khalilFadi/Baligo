@@ -86,7 +86,18 @@ button:hover{
     border-color: var(--SecondaryColor);
     transition: 0.5s;
 }
+.orange{
+    background-color: var(--MainColor);
 
+    transition: 0.5s;
+    color: var(--SecondaryColor);
+}
+.orange:hover{
+    background-color: var(--SecondaryColor);
+    color: var(--MainColor);
+    border-color: var(--MainColor);
+    transition: 0.5s;
+}
 #btn{
     height: 9vh;
     text-align: center;

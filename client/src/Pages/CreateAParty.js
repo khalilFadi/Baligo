@@ -83,14 +83,43 @@ export default function CreateAPartyscreen() {
                 value={form.DateRange}
                 onChange={(e) => updateForm({ DateRange: e.target.value })}
                 ></input>
+    <div id="chooseSport">
+                
+         <input
+            type="submit"
+            value="Basketball"
+            style={{marginTop: "2vh", marginLeft: "2vw"}}
+            className="SubButton orange"
+            id = "SubmitButton"
+         />
+        <div>
+          <img src="../Resources"/>
+          <input
+              type="submit"
+              value="Football"
+
+              style={{marginTop: "2vh", marginLeft: "2vw"}}
+              className="SubButton orange"
+              id = "SubmitButton"
+          ></input>
+        </div>    
             <input
             type="submit"
+            value="VollyBall"
+
+            style={{marginTop: "2vh", marginLeft: "2vw"}}
+            className="SubButton orange"
+            id = "SubmitButton"
+         />
+         </div>
+<input
+            type="submit"
+            style={{marginTop: "2vh", marginLeft: "2vw"}}
             className="SubButton white"
             id = "SubmitButton"
-
-         />
-
+         ></input>
         </form>
+
         {/* <div>
             <input type="image" onClick={(e) => updateForm({ Sport: "Basketball" })} src={require("../Resources/Images/2ndscreen-basketball-logo.png")} />
             <input type="image" onClick={(e) => updateForm({ Sport: "Football" })} src={require("../Resources/Images/2ndScreen-football-logo.png")} />
