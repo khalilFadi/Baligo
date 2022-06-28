@@ -74,13 +74,14 @@ button:hover{
 }
 .white{
     background-color: var(--SecondaryColor);
-    border-color: var(--MainColor);
+    border-color: var(--sec);
     transition: 0.5s;
     color: var(--MainColor);
 }
 .white:hover{
     background-color: var(--MainColor);
     color: var(--SecondaryColor);
+    border-color: var(--SecondaryColor);
     transition: 0.5s;
 }
 
@@ -97,4 +98,7 @@ button:hover{
     padding-left: 2vw;
     padding-right: 2vw;
 
+}
+#navItem a:hover{
+    color: var(--MainColor);
 }

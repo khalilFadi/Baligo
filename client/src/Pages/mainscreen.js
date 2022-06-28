@@ -77,7 +77,10 @@ export default function Mainscreen() {
     return (
         <div id="MainPageDiv" >
             <pre id="VisionStatement"></pre>
-            <a id="MainScreenButton">Find Party</a>
+            {
+                //just a genreal button with no function in it
+            }
+            {/* <a id="MainScreenButton">Find Party</a> */}
             <img id="MainPageDivImage" alt="timer" class="center" src={require('../../src/Resources/Images/ballstuckV4.png')} />
         </div>
 

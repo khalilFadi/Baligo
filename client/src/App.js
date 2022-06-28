@@ -17,9 +17,10 @@ import root from "./styles/Style.css";
 const App = () => {
  return (
   
-   <div>
+   <div style={{maxWidth: "100%"}}>
     <Navbar/>
     <MainScreen/>
+
     {/* <Navbar/>mes
     <MainScreen/>
     <SecondScreen/>
