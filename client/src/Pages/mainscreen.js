@@ -77,10 +77,9 @@ export default function Mainscreen() {
     return (
         <div id="MainPageDiv" >
             <pre id="VisionStatement"></pre>
-            {
-                //just a genreal button with no function in it
-            }
-            {/* <a id="MainScreenButton">Find Party</a> */}
+            {/* <a id="MainScreenButton">Find Party</a>
+             */}
+             <button className="white SubButton" style={{marginTop: "47vh"}}> Sign Up</button>
             <img id="MainPageDivImage" alt="timer" class="center" src={require('../../src/Resources/Images/ballstuckV4.png')} />
         </div>
 

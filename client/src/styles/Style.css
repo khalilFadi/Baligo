@@ -67,10 +67,12 @@ button:hover{
     border-radius: 20px;
     padding: 2vw;
     padding-top: 1vw;
-    padding-bottom: 1vw;
+    /* padding-bottom: 4vw; */
     font-size: var(--LargeText);
     transition: 0.5s;
     width: 12vw;
+    line-height: 3.5vh;
+    height: 7vh;
 }
 .white{
     background-color: var(--SecondaryColor);
