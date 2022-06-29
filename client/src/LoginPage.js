@@ -10,31 +10,34 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import MainScreen from "./Pages/mainscreen";
 import SecondScreen from "./Pages/secondScreen";
-import LoginPage from "./LoginPage";
-import HomePage from "./HomePage";
+import Survey from "./Pages/Survey";
 
 import root from "./styles/Style.css";
-import Mainscreen from "./Pages/mainscreen";
 
+function delteElement(x){
+  x.remove();
+}
+function createElement(x){
+  document.getElementById("Main").createElement(x);
+}
 const App = () => {
  return (
   
    <div style={{maxWidth: "100%"}} id={"Main"}>
-     {/* {CheckyCheck()} */}
-
+    <Navbar/>
+    <Survey/>
     {/* <Survey/> */}
   {/* <SecondScreen /> */}
     {/* <Navbar/>mes
     <MainScreen/>
     <SecondScreen/>
 
- */}
- <Navbar/>
- <Routes>
-	<Route exact path="/" element={<Mainscreen/>}></Route>
-	<Route exact path="/Signup" element={<LoginPage/>}></Route>
-	<Route exact path="/HomePage" element={<HomePage/>}></Route>
- </Routes>
+
+     <Routes>
+       <Route exact path="/" element={<RecordList />} />
+       <Route path="/edit/:id" element={<Edit />} />
+       <Route path="/create" element={<Create />} />
+     </Routes> */}
      
    </div>
  );

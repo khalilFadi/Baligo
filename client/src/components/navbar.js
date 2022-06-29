@@ -46,7 +46,7 @@ export default function Navbar() {
 
       
     
-        <button class="loginButton" style={{width: "13vw"}}>Create Profile         
+        <button class="loginButton" style={{width: "13vw"}} onClick={() => {window.open("/Signup", '_self')}}>Create Profile         
         </button>
 
     </div>

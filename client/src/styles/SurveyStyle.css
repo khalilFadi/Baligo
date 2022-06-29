@@ -1,0 +1,60 @@
+#SurveySheet{
+    max-width: 60vw;
+    align-items: center;
+    margin: auto;
+    margin-top: 5vh;
+    font-family: Perpetua;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#SurveySheet .form-control{
+    text-align: left;
+    margin-bottom: 25px;
+
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling form-control Radio
+button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+.form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+#SurveyTitle{
+    color: var(--MainColor);
+    font-family: Perpetua;
+    text-align: center;
+}
+a{
+    all: revert;
+    color: var(--MainColor);
+}
+#TermsofCondition *{
+    float: left;   
+}
+#TermsofCondition {
+    height: 40px;
+}
+#ElementOfChoice *{
+float: left;
+color: var(--MainColor);
+align-items: center;
+vertical-align:middle;
+}

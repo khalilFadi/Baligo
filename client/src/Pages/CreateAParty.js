@@ -90,28 +90,32 @@ export default function CreateAPartyscreen() {
             value="Basketball"
             style={{marginTop: "2vh", marginLeft: "2vw"}}
             className="SubButton orange"
+            onClick={(e) => updateForm({Sport: "BasketBall"})}
+
             id = "SubmitButton"
          />
-        <div>
-          <img src="../Resources"/>
+
+          {/* <img src="../Resources"/> */}
           <input
               type="submit"
               value="Football"
 
               style={{marginTop: "2vh", marginLeft: "2vw"}}
+              onClick={(e) => updateForm({Sport: "Football"})}
               className="SubButton orange"
               id = "SubmitButton"
           ></input>
-        </div>    
+
             <input
             type="submit"
             value="VollyBall"
+            onClick={(e) => updateForm({Sport: "VollyBall"})}
 
             style={{marginTop: "2vh", marginLeft: "2vw"}}
             className="SubButton orange"
             id = "SubmitButton"
          />
-         </div>
+    </div>
 <input
             type="submit"
             style={{marginTop: "2vh", marginLeft: "2vw"}}

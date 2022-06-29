@@ -40,11 +40,12 @@ recordRoutes.route("/usersRecord/:id").get(function (req, res) {
 recordRoutes.route("/usersRecord/add").post(function (req, response) {
   let db_connect = dbo.getDb3();
  let myobj = {
-   PartyName: req.body.PartyName,
-   Location: req.body.Location,
-   DateRange: req.body.DateRange,
-   Sport: req.body.Sport,  
-
+   Name: req.body.Name,
+   Email: req.body.Email,
+   PhoneNumber: req.body.PhoneNumber,
+   Location: req.body.Location,  
+   Age: req.body.Age,  
+   Gender: req.body.Gender,  
  };
  db_connect.collection("publicInformation").insertOne(myobj, function (err, res) {
    if (err) throw err;

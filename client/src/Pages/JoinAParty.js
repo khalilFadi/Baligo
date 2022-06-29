@@ -10,7 +10,7 @@ const Record = (props) => (
     <td>{props.record.Sport}</td>
     {/* <td>{props.partiesRecord.Sport}</td> */}
     <td>
-      <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
+      {/* <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> | */}
       <button className="btn btn-link"
         onClick={() => {
           props.deleteRecord(props.record._id);
@@ -75,7 +75,6 @@ function recordList(){
            <th>Date Range</th>
            <th>Sport</th>
          </tr>
-         <button onClick={() => deleteRecord()}/>
        </thead>
        <tbody style={{textAlign: 'left'}}>
          {recordList()}

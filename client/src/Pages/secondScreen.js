@@ -198,7 +198,7 @@ export default function SecondScreen() {
                     <h1 id="MainText"> Create a party</h1>
                     <h2 id="Subtext"> Create your own party and find people to play with</h2>
                 </div>
-                <button class="SubButton" id="LeftSubButton">Start Now</button>
+                <button class="SubButton white" id="LeftSubButton">Start Now</button>
 
             </div>
             <div id="rightSide">
@@ -208,7 +208,7 @@ export default function SecondScreen() {
                     <h2 id="Subtext"> Find a party that matches your intrests</h2>
                 </div>
                 <JoinAPartyscreen/>
-                <button class="SubButton" id="RightSubButton">Start Now</button>
+                <button class="SubButton orange" id="RightSubButton">Start Now</button>
 
             </div>
 

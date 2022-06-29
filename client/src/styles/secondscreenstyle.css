@@ -170,11 +170,12 @@
 }
 #chooseSport *{
     float: left;   
-    text-align: center;
-    align-items: center;
     margin-left: 10vw;
 }
 #chooseSport *::placeholder{
     color: var(--SecondaryColor);
+}
+#ButtonWithImage{
+    float: left;   
 
 }

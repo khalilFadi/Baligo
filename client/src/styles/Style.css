@@ -35,7 +35,7 @@ h2{
 }
 a {
     font-family: var(--MainFont);
-    color: white !important;
+    color: white;
     background-color: var(--MainColor);
     padding-left: 3vh;
     padding-right: 3vh;
@@ -44,7 +44,6 @@ a {
 button{
     vertical-align: middle;
     color: var(--SecondaryColor);
-    background-color: var(--MainColor);
 
 } 
 button:hover{
