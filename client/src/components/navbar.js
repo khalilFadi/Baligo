@@ -14,7 +14,7 @@ export default function Navbar() {
   <nav id="" class="navbar navbar-expand-lg navbar-light " >
   <div class="container-fluid" id="navigationMenu" >
   <NavLink id="BalligoTextLogo" to="/">
-    <a id="BalligoTextLogo" href="#">Balligo</a>
+    <a id="BalligoTextLogo" href="#">Ballego</a>
     </NavLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

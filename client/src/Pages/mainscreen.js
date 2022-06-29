@@ -6,7 +6,7 @@ import "../styles/mainscreenstyle.css";
 import "../styles/Style.css";
 import backgroundImage from '../Resources/Images/draft1\ Balligo\ homepage.jpg';
 var x = 0;
-var txt = "Some really inspiration vision statement \n that should take all this space."; 
+var txt = "Ballego\n lets ball \n lets go "; 
 var speed = 60;
 var finished = false;
 
@@ -79,7 +79,7 @@ export default function Mainscreen() {
             <pre id="VisionStatement"></pre>
             {/* <a id="MainScreenButton">Find Party</a>
              */}
-             <button className="white SubButton" style={{marginTop: "47vh"}}> Sign Up</button>
+             {/* <button className="white SubButton" style={{marginTop: "47vh"}}> Sign Up</button> */}
             <img id="MainPageDivImage" alt="timer" class="center" src={require('../../src/Resources/Images/ballstuckV4.png')} />
         </div>
 
