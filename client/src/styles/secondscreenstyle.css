@@ -48,9 +48,10 @@
     width: 19vw;
 }
 #rightOpenMenu{
+    overflow-y:scroll;
     position: absolute;
-    width: 50vw;
-    margin-top: -47vh;
+    margin-top: -42vh;
+    height: 80vh;
 }
 #leftSide{
 
@@ -360,6 +361,6 @@
     width: 8vw;
     float:center;
     margin: auto;
-    margin-left: 2vw;
-    margin-top: 12vh;
+    margin-left: 1vw;
+    margin-top: 5vh;
   }

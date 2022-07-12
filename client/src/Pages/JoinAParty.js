@@ -1,15 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, renderMatches } from "react-router-dom";
  
+function getColor(sportname){
+  switch(sportname){
+    case "Basketball":
+      return "rgb(242, 101, 34)";
+    case "Football":
+      return "rgb(69, 69, 69)";
+    case "VollyBall":
+      return "rgb(242, 214, 34)";
+  }
+}
+function getImage(sportname){
+  switch(sportname){
+    case "Basketball":
+      return "basketballlogo";
+    default:
+      return "basketballlogo";
 
+    case "Football":
+      return "footballlogo";
+    // case "VollyBall":
+    //   return "rgb(242, 214, 34)";
+  }
+}
 const Record = (props) => (
   <div class="card">
-  <div class="additional">
+  <div class="additional" style={{background: getColor(props.record.Sport)}}>
     <div class="user-card">
       <div class="level center">
       {props.record.Sport}
       </div>
-      <img class = "image" src={require('../Resources/Images/' + "basketballlogo" + '.png')}/>
+      <img class = "image" src={require('../Resources/Images/' + getImage(props.record.Sport) + '.png')}/>
     
       <svg width="110" height="110" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" class="center2">
         <title id="title">{props.record.Sport}</title>
@@ -63,7 +85,7 @@ const Record = (props) => (
     </div>
   </div>
   <div class="general">
-    <h1>Game #5</h1>
+    <h1> {props.record.Sport}</h1>
     <p>Location name: {props.record.Location} </p>
     <p>Court name:Ramallah Tarweehi Center </p>
       <p>Host: {props.record.partyOwner}</p>
